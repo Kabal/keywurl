@@ -18,11 +18,9 @@ static KeywurlPlugin* plugin = nil;
         NSLog(@"Keywurl version %d.%d.%d loading", 
             KEYWURL_MAJORVERSION, KEYWURL_MINORVERSION, KEYWURL_MAINTVERSION);
     #endif
-    KeywurlPlugin* plugin = [KeywurlPlugin sharedInstance];
-    NSClassFromString(@"BrowserWindowController");
-    [[KeywurlBrowserWindowController class] poseAsClass: [BrowserWindowController class]];
-    NSClassFromString(@"BrowserWebView");
-    [[KeywurlBrowserWebView class] poseAsClass: [BrowserWebView class]];
+
+	MethodSwizzle(NSClassFromString(@"BrowserWindowController"), @selector(goToToolbarLocation:), @selector(keywurl_goToToolbarLocation:), YES);
+    MethodSwizzle(NSClassFromString(@"BrowserWebView"), @selector(webView:contextMenuItemsForElement:defaultMenuItems:), @selector(keywurl_webView:contextMenuItemsForElement:defaultMenuItems:), YES);
     
     NSUserDefaults* preferences = [[NSUserDefaults standardUserDefaults] retain];
     [preferences setObject: @"world" forKey: @"hello"];

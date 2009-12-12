@@ -24,6 +24,10 @@
 /* Begin PBXBuildFile section */
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		E2FFB76310D33A2B00E1DEF4 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFB76210D33A2B00E1DEF4 /* Swizzle.m */; };
+		E2FFB76410D33A2B00E1DEF4 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFB76210D33A2B00E1DEF4 /* Swizzle.m */; };
+		E2FFB76510D33A2B00E1DEF4 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFB76210D33A2B00E1DEF4 /* Swizzle.m */; };
+		E2FFB76610D33A2B00E1DEF4 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFB76210D33A2B00E1DEF4 /* Swizzle.m */; };
 		FA3406560D81FC0600F0EC2E /* SaveKeywordWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA3406550D81FC0600F0EC2E /* SaveKeywordWindow.nib */; };
 		FA3406570D81FC0600F0EC2E /* SaveKeywordWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA3406550D81FC0600F0EC2E /* SaveKeywordWindow.nib */; };
 		FA3406A10D82125D00F0EC2E /* KeywordSaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3406540D81FBF000F0EC2E /* KeywordSaveController.m */; };
@@ -128,6 +132,8 @@
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		E2FFB76110D33A2B00E1DEF4 /* Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swizzle.h; sourceTree = "<group>"; };
+		E2FFB76210D33A2B00E1DEF4 /* Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swizzle.m; sourceTree = "<group>"; };
 		FA3406530D81FBF000F0EC2E /* KeywordSaveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordSaveController.h; sourceTree = "<group>"; };
 		FA3406540D81FBF000F0EC2E /* KeywordSaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeywordSaveController.m; sourceTree = "<group>"; };
 		FA3406550D81FC0600F0EC2E /* SaveKeywordWindow.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = SaveKeywordWindow.nib; sourceTree = "<group>"; };
@@ -243,6 +249,8 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E2FFB76110D33A2B00E1DEF4 /* Swizzle.h */,
+				E2FFB76210D33A2B00E1DEF4 /* Swizzle.m */,
 				FA76577A0FE9712900910178 /* IntroWindowController.h */,
 				FA76577B0FE9712900910178 /* IntroWindowController.m */,
 				FA3406530D81FBF000F0EC2E /* KeywordSaveController.h */,
@@ -486,6 +494,7 @@
 				FA3A4D370D789D2800BD4C53 /* NSPreferences+Keywurl.m in Sources */,
 				FA3406A20D82125E00F0EC2E /* KeywordSaveController.m in Sources */,
 				FA76577D0FE9712900910178 /* IntroWindowController.m in Sources */,
+				E2FFB76610D33A2B00E1DEF4 /* Swizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +511,7 @@
 				FA3A4D850D78A0BD00BD4C53 /* NSPreferences+Keywurl.m in Sources */,
 				FA3406A10D82125D00F0EC2E /* KeywordSaveController.m in Sources */,
 				FA76577E0FE9712900910178 /* IntroWindowController.m in Sources */,
+				E2FFB76510D33A2B00E1DEF4 /* Swizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +528,7 @@
 				FAD407060FE2C59200365831 /* NSPreferences+Keywurl.m in Sources */,
 				FAD407070FE2C59200365831 /* KeywordSaveController.m in Sources */,
 				FA76577F0FE9712900910178 /* IntroWindowController.m in Sources */,
+				E2FFB76410D33A2B00E1DEF4 /* Swizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +545,7 @@
 				FAE6DFE90F55DC2C008D3D58 /* NSPreferences+Keywurl.m in Sources */,
 				FAE6DFEA0F55DC2C008D3D58 /* KeywordSaveController.m in Sources */,
 				FA76577C0FE9712900910178 /* IntroWindowController.m in Sources */,
+				E2FFB76310D33A2B00E1DEF4 /* Swizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,13 +638,13 @@
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				INFOPLIST_PREFIX_HEADER = Constants.h;
 				INFOPLIST_PREPROCESS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = (
 					"-undefined",
 					dynamic_lookup,
 				);
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Debug;
 		};
@@ -650,13 +662,13 @@
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				INFOPLIST_PREFIX_HEADER = Constants.h;
 				INFOPLIST_PREPROCESS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = (
 					"-undefined",
 					dynamic_lookup,
 				);
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Release;
 		};
@@ -771,6 +783,8 @@
 		FAE6DFEE0F55DC2C008D3D58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION) for Safari 4 on Leopard";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -793,6 +807,8 @@
 		FAE6DFEF0F55DC2C008D3D58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION) for Safari 4 on Leopard";
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;

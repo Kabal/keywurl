@@ -1,5 +1,5 @@
 #import <Cocoa/Cocoa.h>
 #import "Safari.h"
 
-@interface KeywurlBrowserWebView : BrowserWebView
+@interface NSObject(Keywurl_BrowserWebView)
 @end
